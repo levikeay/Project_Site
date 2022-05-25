@@ -8,21 +8,29 @@ description: I performed this imaging experiment as a part of Physics 409.
 
 ### INTRODUCTION ###
 
-This experiment was a component of Physics 409, experimental physics. The purpose of the experiment was to understand how a Positron emmission tomography (PET) imaging device functions and to characterize the device. I investigated sources of error, the impact of imaging parameters on resolution and imaging times. 
+This experiment was a component of Physics 409, experimental physics. The purpose of the experiment was to understand and characterize a positron emmission tomography (PET) imaging system. I began by taking scans along a single dimension with a single radiation source which allowed for me to understand the effects of imaging parameters on the resolution of the system. I then progressed to imaging two radiation sources with an additional rotational degree of freedom, which allows for a 2 dimensional image ot be reconstructed.
 
 ### BACKGROUND
 
 Positron Emission tomography (PET) is an imaging modality which uses [beta-positive decay](https://www.britannica.com/science/beta-plus-decay) of a radiation sample as its imaging energy source. This decay is well suited to its purpose because it produces two photons which are emitted in opposing directions, due to the conservation of energy when a positron and electron annihilate inside the radiation source. This characteristics along-axis emission provides the geometric information which is used in image reconstruction from the scanning device. Two opposing detectors are used and when they detect photons simultaneously, it is known that the source of emission lies somewhere along the line between them. By detecting at many angles, an image of the radiation source distribution can be made by using an [inverse radon transform](https://www.mathworks.com/help/images/the-inverse-radon-transformation.html).
  
 In medical PET systems, the multiple angles of detection is usually achieved by having a ring of detectors surrounding the imaging area. In the present experiment, the set-up consitutes just two detectors, directly opposing each other as shown in . Radioactive samples can then be placed in the staging area and moved along the track in one dimension, as well as rotatiing. These 2 degrees of freedom can then be combined to form a 2 dimensional image via the inverse radon transform.
- 
+
+
+| ![][setup1] |
+|:--:|
+| The 2 photomultiplier tube detector setup |
+
+
+|![][setup_close]|
+|:--:|
+| Close up of the imaging area. The arm can hold one or two radiation sources and can move both linearly along the track and rotate on its axis.|
+
+### 1 dimensional scan
 ![][setup]
 
 Figure 1
 
-![][setup1]
-
-![][setup_close]
 
 ![][setup_close]
  
