@@ -11,14 +11,14 @@ title: Levi Keay
 # Description of the Site
 description: Projects and interests
 # URL of Image of the Site
-site-image: https://github.com/levikeay/Project_Site/blob/master/assets/images/IMG_3406.jpg?raw=true
+site-image: https://github.com/levikeay/Project_Site/blob/master/assets/images/title_imgs/lakemirror.png?raw=true
 # Keywords of the Site
 site-keywords: Levi Keay, Resume, Physics, Remote Sensing
 # URL for the Image of custom Favicon
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://raw.githubusercontent.com/levikeay/Project_Site/master/assets/images/IMG_3406.jpg?raw=true
+heroimage: https://github.com/levikeay/Project_Site/blob/master/assets/images/title_imgs/lakemirror.png?raw=true
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
@@ -26,7 +26,7 @@ email:
 facebook_username: 
 twitter_username: 
 instagram_username: 
-linkedin_username: 
+linkedin_username: Levi Keay
 github_username:  
 youtube_channel_id: 
 reddit_username: 
