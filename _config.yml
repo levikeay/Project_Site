@@ -23,22 +23,22 @@ heroimage: https://raw.githubusercontent.com/levikeay/Project_Site/master/assets
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: 
-facebook_username: 
-twitter_username: 
-instagram_username: 
-linkedin_username: https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BEpY3Jmp%2BRSqE1qshGzyJWw%3D%3D
-github_username:  
-youtube_channel_id: 
-reddit_username: 
-behance_username: 
-dribbble_username: 
-spotify_username: 
+facebook_username: ''
+twitter_username: ''
+instagram_username: ''
+linkedin_username: 'https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BEpY3Jmp%2BRSqE1qshGzyJWw%3D%3D'
+github_username:  ''
+youtube_channel_id: ''
+reddit_username: ''
+behance_username: ''
+dribbble_username: ''
+spotify_username: ''
 
 # Google Analytics
-google-analytics: 
+google-analytics: ''
 
 # Disqus
-disqus-shortname: 
+disqus-shortname: ''
 
 # Name of the Author
 author-name: Levi Keay
