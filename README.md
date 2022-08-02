@@ -20,7 +20,7 @@ I've made edits to HTML files in the repository in order to style the page to my
 A key addition to the Gemfile is 
 >gem "webrick"
 
-This allows the site to build using the newest ruby update.
+This allows the site to build using the newest ruby update, which does not include this package natively (thank you stack exchange).
 
 Thank you to [thedevslot](https://github.com/thedevslot/WhatATheme/) for this useful and stylish template.
 
