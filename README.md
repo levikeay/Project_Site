@@ -1,4 +1,6 @@
 # Levi Keay's project portfolio site [under development]
+Find the live site [here, https://levikeay.github.io/Project_Site/](https://levikeay.github.io/Project_Site/)
+
 Created from the Jekyll theme **WhatATheme**. Find WhatATheme's [**Demo Here**](https://thedevslot.github.io/WhatATheme/)
 
 I hope to continue to add short writeups of past projects I have done to have a place to showcase my interests.
