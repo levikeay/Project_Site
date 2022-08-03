@@ -24,7 +24,7 @@ heroimage: https://raw.githubusercontent.com/levikeay/Project_Site/master/assets
 # If you don't want to use any icon, you can leave them blank.
 email: levi.keay@gmail.com
 facebook_username: 
-twitter_username: levikeay
+twitter_username: KeayLevi
 instagram_username: 
 linkedin_username: levi-keay-172288245?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVRmA3dV4TRiKlN0jemgfXw%3D%3D
 github_username: levikeay
@@ -43,7 +43,7 @@ disqus-shortname:
 # Name of the Author
 author-name: Levi Keay
 # URL for the Image of the Author
-author-image: https://images.pexels.com/photos/3772623/pexels-photo-3772623.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3772623.jpg&fm=jpg
+author-image: assets/images/title_imgs/Levi1.jpg
 # 60 Words About the Author
 author-about: Levi is a recent graduate of the University of British Columbia's physics program. His interests include imaging, acoustics, and programming.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
