@@ -1,7 +1,7 @@
 ---
 title: Building Distributed Mode Loudspeakers (aka, the Worlds Best Speakers)
 layout: post
-post-image: "assets/images/DML_build/wall_position.JPG"
+post-image: "https://github.com/levikeay/Project_Site/blob/master/assets/images/DML_build/wall_position.JPG?raw=true"
 description: My first speaker build, inspired by Tech Ingredients youtube channel. They are an interesting different approach to speaker design from conventional woofer based designs, and I recommend this project as a cheap entrypoint to DIY audio.
 
 ---
