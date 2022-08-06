@@ -4,7 +4,7 @@ markdown: kramdown
 # URL of the Site
 url: https://levikeay.github.io
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: Project_Site/
+baseurl: /Project_Site
 
 # Title of the Site
 title: Levi Keay
