@@ -30,18 +30,24 @@ This allows the site to build using the newest ruby update, which does not inclu
 
 It involves 2 steps:
 1) edit \_config.yml and include the following lines:
+ 
  >{% if page.usemathjax %}
     <script type="text/javascript" async
      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
       </script>
     {% endif %}
+    
   ... copy from here with the spelling as "endif" not "end if" as the tutorial shows.
 
 2) add : 
-  >usemathjax: true
-  to the html portion of your post which you want to use mathjax in (this is the part between the dashed lines at the top of your post.
+ 
+ >usemathjax: true
+ 
+ ... to the html portion of your post which you want to use mathjax in (this is the part between the dashed lines at the top of your post.
 
+Then envelope your math expressions with \$\$ on either side.
 
+---
 Thank you to [thedevslot](https://github.com/thedevslot/WhatATheme/) for this useful and stylish template.
 
 ---
