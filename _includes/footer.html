@@ -28,16 +28,16 @@
             <!--Link Section-->
             <div class="column has-text-white">
                 <h3>More Links</h3>
-                <ul>
-                    <li><a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a></li>
-                    <li><a target="_blank" href="https://github.com/levikeay">GitHub</a></li>
+                <ul>               
                     <li><a target="_blank" href="assets/images/LeviResume2022.pdf">Resume</a></li>
+                    <li><a target="_blank" href="https://github.com/levikeay">Levi's GitHub</a></li>
+                    <li><a target="_blank" href="https://github.com/levikeay/Project_Site">This website's repo</a></li>
                 </ul>
             </div>
 
             <!--Blog-post Section-->
             <div class="column has-text-white">
-                <h3>Recent Posts</h3>
+                <h3>Other Projects</h3>
                 {% for post in site.posts offset: 0 limit:3 %}
                 <li>
                     <a href="{{post.url | absolute_url}}">{{post.title}}</a>
