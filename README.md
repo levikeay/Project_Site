@@ -19,14 +19,14 @@ To write a post, I start with the markdown documents provided in the _posts_ dir
 
 I've made edits to HTML files in the repository in order to style the page to my liking. This includes removing blog post dates and read times in the blog card display. 
 
-**-I had to add this line to the gemfile:**
+- **I had to add this line to the gemfile:**
 
 >gem "webrick"
 
 This allows the site to build using the newest ruby update, which does not include this package natively (thank you stack exchange).
 
 
-**-I enabled mathjax for writing LaTex style expressions following [this tutorial](https://alanduan.me/random/mathjax/).**
+- **I enabled mathjax for writing LaTex style expressions following [this tutorial](https://alanduan.me/random/mathjax/).**
 
 It involves 2 steps:
 1) edit _includes/head.html and include the following lines:
@@ -46,6 +46,11 @@ It involves 2 steps:
  ... to the html portion of your post which you want to use mathjax in (this is the part between the dashed lines at the top of your post.
 
 Then envelope your math expressions with \$\$ on either side.
+
+
+- **I edited about.html to change the names of the buttons, and added a button to link to my resume.**
+
+[I found this tutorial helpful](https://bulma.io/documentation/columns/options/)
 
 ---
 Thank you to [thedevslot](https://github.com/thedevslot/WhatATheme/) for this useful and stylish template.
