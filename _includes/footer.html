@@ -30,13 +30,11 @@
                 <h3>More Links</h3>
                 {% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/'  limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
+                <li><a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a></li>
                 <li><a target="_blank" href="https://github.com/levikeay">GitHub</a></li>
                 <li><a target="_blank" href="assets/images/LeviResume2022.pdf">Resume</a><li>
+                 {% endunless %}
+                {% endfor %}
             </div>
 
             <!--Blog-post Section-->
