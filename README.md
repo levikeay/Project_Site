@@ -29,7 +29,7 @@ This allows the site to build using the newest ruby update, which does not inclu
 **-I enabled mathjax for writing LaTex style expressions following [this tutorial](https://alanduan.me/random/mathjax/).**
 
 It involves 2 steps:
-1) edit \_config.yml and include the following lines:
+1) edit _includes/head.html and include the following lines:
  
  >{% if page.usemathjax %}
     <script type="text/javascript" async
@@ -37,7 +37,7 @@ It involves 2 steps:
       </script>
     {% endif %}
     
-  ... copy from here with the spelling as "endif" not "end if" as the tutorial shows.
+  ... copy from here with the spelling as "endif" not "end if" as the tutorial shows. Check my head.html file for the specfic formatting.
 
 2) add : 
  
