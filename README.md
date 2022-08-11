@@ -19,10 +19,28 @@ To write a post, I start with the markdown documents provided in the _posts_ dir
 
 I've made edits to HTML files in the repository in order to style the page to my liking. This includes removing blog post dates and read times in the blog card display. 
 
-A key addition to the Gemfile is 
+**-I had to add this line to the gemfile: **
+
 >gem "webrick"
 
 This allows the site to build using the newest ruby update, which does not include this package natively (thank you stack exchange).
+
+
+**-I enabled mathjax for writing LaTex style expressions following [this tutorial](https://alanduan.me/random/mathjax/). 
+
+It involves 2 steps:
+1) edit \_config.yml and include the following lines:
+ >{% if page.usemathjax %}
+    <script type="text/javascript" async
+     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+    {% endif %}
+  ... copy from here with the spelling as "endif" not "end if" as the tutorial shows.
+
+2) add : 
+  >usemathjax: true
+  to the html portion of your post which you want to use mathjax in (this is the part between the dashed lines at the top of your post.
+
 
 Thank you to [thedevslot](https://github.com/thedevslot/WhatATheme/) for this useful and stylish template.
 
