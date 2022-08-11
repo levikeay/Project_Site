@@ -52,6 +52,8 @@ Then envelope your math expressions with \$\$ on either side.
 
 [I found this tutorial helpful](https://bulma.io/documentation/columns/options/)
 
+- **Use a square (1:1 ratio) author picture to allow for conversion to circle shaped figure in footer.html and about.html sections.**
+
 ---
 Thank you to [thedevslot](https://github.com/thedevslot/WhatATheme/) for this useful and stylish template.
 
