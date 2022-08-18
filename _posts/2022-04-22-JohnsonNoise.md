@@ -7,6 +7,4 @@ description: A sample post to show how the content will look and how will differ
 
 ---
 
-<iframe src="https://github.com/levikeay/Project_Site/files/9378184/johnson_noise.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
-
-[johnson_noise.pdf](https://github.com/levikeay/Project_Site/files/9378184/johnson_noise.pdf)
+<embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/levikeay/Project_Site/files/9378184/johnson_noise.pdf" width="500" height="375">
