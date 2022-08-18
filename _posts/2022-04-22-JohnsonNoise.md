@@ -14,3 +14,9 @@ description: A sample post to show how the content will look and how will differ
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+<iframe src="http://docs.google.com/gview?url=http://example.com/mypdf.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+
+<iframe src="https://github.com/levikeay/Project_Site/files/9378184/johnson_noise.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
+
+[johnson_noise.pdf](https://github.com/levikeay/Project_Site/files/9378184/johnson_noise.pdf)
