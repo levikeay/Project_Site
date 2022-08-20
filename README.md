@@ -54,6 +54,21 @@ Then envelope your math expressions with \$\$ on either side.
 
 - **Use a square (1:1 ratio) author picture to allow for conversion to circle shaped figure in footer.html and about.html sections.**
 
+- **To embed PDFs:**
+
+I found this html code to work best:
+
+'''
+<center>
+  <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=YOUR_PDF_HERE.pdf" width="850" height="4400">
+</center>
+'''
+
+Replace YOUR_PDF_HERE.pdf with the url link to your pdf. this will be centered due to \<center\> tags. I set the width and height to be proportional to an 8.5x11 page by using width 850 and height 1100 * number of pages. The example above is for a 4 page document. This way there is no double scroll bar, and the pdf can sit inside the webpage.
+
+
+
+
 ---
 Thank you to [thedevslot](https://github.com/thedevslot/WhatATheme/) for this useful and stylish template.
 
