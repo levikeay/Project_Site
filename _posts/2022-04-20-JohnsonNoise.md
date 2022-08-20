@@ -14,6 +14,8 @@ If your browser doesn't support my PDF embedding, [find my report here](https://
 
 ---
 <center>
-  <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/levikeay/Project_Site/files/9378184/johnson_noise.pdf" width="1000" height="2200">
+  <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://levikeay.github.io/Project_Site/assets/images/johnsonNoise/johnson_noise.pdf" width="1000" height="2200">
 </center>
 ---
+
+https://github.com/levikeay/Project_Site/files/9378184/johnson_noise.pdf" width="1000" height="2200">
