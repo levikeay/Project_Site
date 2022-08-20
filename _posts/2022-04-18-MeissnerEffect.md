@@ -11,14 +11,11 @@ One such property is the [Meissner effect](http://hyperphysics.phy-astr.gsu.edu/
 
 See the report below for an in-depth description of the experiment and the results obtained. 
 
+If your browser doesn't support my PDF embedding, [find my report here](https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf)
+
 ---
 <center>
-  <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf" width="1000" height="2200">
+  <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf" width="850" height="4400">
 </center>
 
 ---
-
-
-https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf
-
-If your browser doesn't support my PDF embedding, [find my report here](https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf)
