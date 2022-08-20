@@ -1,5 +1,5 @@
 ---
-title: Empirical Measurement of the Kelvin-Boltzmann Constant from Johnson Noise Power Spectra
+title: Characterizing the London Penetration Depth in a High Tc Superconductor Across the Phase Transition
 layout: post
 post-image: "https://github.com/levikeay/Project_Site/blob/master/assets/images/Meisner/IMG_2431.jpeg?raw=true"
 description: Measuring the London Penetration Depth of YCBO Superconducting Crystal
@@ -15,6 +15,10 @@ See the report below for an in-depth description of the experiment and the resul
 <center>
   <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf" width="1000" height="2200">
 </center>
+
 ---
+
+
+https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf
 
 If your browser doesn't support my PDF embedding, [find my report here](https://levikeay.github.io/Project_Site/assets/images/Meisner/High_Tc_finalRevised.pdf)
