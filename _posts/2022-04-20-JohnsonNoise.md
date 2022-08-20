@@ -12,8 +12,6 @@ Below is my report submitted as coursework for my experimental physics lab class
 
 If your browser doesn't support my PDF embedding, [find my report here](https://levikeay.github.io/Project_Site/assets/images/johnsonNoise/johnson_noise.pdf)
 
-<iframe src="https://drive.google.com/file/d/1NS5FmMZNz9gTWul0Gi2bKpZREUxlLbAU/preview" width="640" height="480" allow="autoplay"></iframe>
-
 ---
 <center>
   <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://levikeay.github.io/Project_Site/assets/images/johnsonNoise/johnson_noise.pdf" width="850" height="2200">
