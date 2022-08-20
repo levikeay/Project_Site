@@ -2,7 +2,7 @@
 title: Empirical Measurement of the Kelvin-Boltzmann Constant from Johnson Noise Power Spectra
 layout: post
 post-image: "https://github.com/levikeay/Project_Site/blob/master/assets/images/johnsonNoise/Boltzmann2.jpg?raw=true"
-description: Studying the theory of Johnson Noise in resistors
+description: Studying the theory of Johnson Noise in resistors.
 
 ---
 
