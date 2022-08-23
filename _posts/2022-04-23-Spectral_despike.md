@@ -48,7 +48,7 @@ Here is a python function that implements this method for a single pixel. To app
 ~~~ python
 
 def despike(pixel, doys, thresh = 0.05):
-
+    
     first_day, last_day = np.min(doys), np.max(doys)
     valid_inds = np.where((pixel != 0) & np.isfinite(pixel))
     doys2 = doys[valid_inds]
@@ -78,5 +78,5 @@ def despike(pixel, doys, thresh = 0.05):
         iterations +=1
     return pixel2, doys 
 
-~~~
+~~~{: .language-python}
 
