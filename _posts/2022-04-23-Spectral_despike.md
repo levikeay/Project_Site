@@ -45,7 +45,7 @@ Set the threshold too low, and you will remove valuable information from the tim
 
 Here is a python function that implements this method for a single pixel. To apply to a large area, I use np.apply_along_axis().
 
-~~~Python
+~~~ python
 
 def despike(pixel, doys, thresh = 0.05):
 
