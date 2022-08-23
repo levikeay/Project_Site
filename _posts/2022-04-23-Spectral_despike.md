@@ -2,7 +2,7 @@
 title: Data Cleaning for Optical Satellite Timeseries Containing Cloud
 layout: post
 usemathjax: true
-post-image: "https://user-images.githubusercontent.com/63168148/186032134-c36e72a8-8323-4c52-a469-1d61f7af20f5.gif"
+post-image: "https://user-images.githubusercontent.com/63168148/186097612-0c4c06d0-09df-4e83-b4fe-889eccd94588.gif"
 description: 
 
 ---
@@ -16,19 +16,22 @@ There are multiple processing steps needed before timeseries analysis can be per
 ## Clouds and NDVI
 The Normalized Difference Vegetation Index (NDVI) is a popular spectral index which is a metric of plant health. It is applicable to cubesat data because it only requires 2 spectral bands. It is computed using the Near-Infrared (NIR) and Red bands as:
 
-> NDVI = $$ (NIR - Red)/(NIR + Red) $$
+$$ NDVI =  \frac{(NIR - Red)}{(NIR + Red)} $$
 
-Clouds appear **dark** in NDVI, and so a pixel area which normally images vegetation but is obstructed by cloud on one observation will appear as a downwards spike in the timeseries. This is simulated in the animations below:
+Clouds appear **dark** in NDVI, and so a pixel area which normally images vegetation but is obstructed by cloud on one observation will appear as a downwards spike in the timeseries. This is simulated in the animations below.
 
-I have made a simple modification to the prior approach of cloud despiking designed for annual best available pixel (BAP) datasets, which have regularly spaced timeseries data (1 point per year). For this approach it is fitting to take the mean of neighbouring values, as it is equivalent to interpolation when the data is evenly spaced.
+## Despiking CubeSat timeseries
+In the past, timeseries despiking as described has been done by comparing each value to the mean of its neighbours. This works well for datasets which have regularly spaced observations, as the mean value of neighbouring points is equivalent to interpolating between them. However, high cadence cubesat data is irregularly spaced, or _sparse_, and an extra few lines of code are required to calculate the linearly interpolated values of each data point's neighbours.
 
-However with irregularly spaced observations as is found with high cadence cubesat data, an extra few lines of code are required to calculate the linearly interpolated values of each data points' neighbours
+Here is an animation of the algorithm in progress, despiking some artificial data, with the large downwards spike meant to represent a cloud in the timeseries:
 
-Here is an example of my algorithm in progress, despiking some artificial data, with the large initial spike meant to represent a cloud:
+|![despike_upperenvelope2](https://user-images.githubusercontent.com/63168148/186097612-0c4c06d0-09df-4e83-b4fe-889eccd94588.gif)|
+|:--:|
+|Despiking a timeseries to its upper envelope, to account for cloudy observations|
 
+The blue line represents the spectral trajectory, and at each iteration the interpolated values for each data point are shown in orange. If the differnce between the interpolated value and the trajectory is larger than a defined despiking threshold, the timeseries data is replaced with the interpolated data. This process is repeated, with the interpolation being recalculated and compared to the updated timeseries until all points are within the despiking threshold of their neighbour- interpolated values.
 
-![despike_upperenvelope2](https://user-images.githubusercontent.com/63168148/186097612-0c4c06d0-09df-4e83-b4fe-889eccd94588.gif)
-
+## Setting an appropriate threshold:
 
 It is important to consider the threshold of despiking. This parameter sets the tolerance of the algorithm. On each iteration, the points of the timeseries are compared to the interpolated values of their neighbours, and the point of largest discrepancy between timeseries value and neighbour-interpolation is despiked only if it is larger than the despiking threshold. 
 
@@ -37,4 +40,43 @@ Setting the threshold too high, you will not manage to despike anything.
 Set the threshold too low, and you will remove valuable information from the timeseries by over-despiking. An example of this is illustrated in the following animation, where the threshold is set to 0.5:
 
 ![despike_toomuch](https://user-images.githubusercontent.com/63168148/186097661-cdd028ef-6a51-48c1-bb4b-7bf5b9f4ce85.gif)
+
+## Algorithm in Python:
+
+Here is a python function that implements this method for a single pixel. To apply to a large area, I use np.apply_along_axis().
+
+~~~Python
+
+def despike(pixel, doys, thresh = 0.05):
+
+    first_day, last_day = np.min(doys), np.max(doys)
+    valid_inds = np.where((pixel != 0) & np.isfinite(pixel))
+    doys2 = doys[valid_inds]
+    pixel2 = pixel[valid_inds]
+    iterations = 0
+    max_dif = 100
+    while max_dif > thresh and iterations < 1000: #new_thresh:
+        # create left and right verisons of arrays:
+        y1 = np.roll(pixel2, -1)
+        y2 = np.roll(pixel2, 1)
+        x1 = np.roll(doys2, -1)
+        x2 = np.roll(doys2, 1)
+        # handle edges:
+        x1[0], y1[0], x2[-1], y2[-1] = doys2[0], pixel2[0], doys2[-1], pixel2[-1] 
+
+        # caluculate neighbour interpolation for each point:
+        interp = ((y2-y1)/(x2-x1))*(doys2 - x1)+y1
+        
+        # set edges of interpolation as mean of closest 2 points:
+        interp[0], interp[-1] = np.mean(pixel2[1:3]), np.mean(pixel2[-3:-1])
+        diff = interp- pixel2   # difference between value and interpolation
+        max_dif = np.max(diff)
+        # remove spike if over thresh:
+        if max_dif > thresh:
+            bigspike = np.argmax(diff)
+            pixel2[bigspike] = interp[bigspike]
+        iterations +=1
+    return pixel2, doys 
+
+~~~
 
