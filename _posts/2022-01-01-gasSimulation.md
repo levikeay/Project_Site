@@ -35,12 +35,14 @@ The temperature for the system is obtained via the fit and is
 printed to a text file "collisions.txt"
 
 ### Animation
-|![collisions](https://user-images.githubusercontent.com/63168148/186534270-90a1b3cc-c935-4ba8-8520-b9ce98675cde.gif)|
+|![collisions_fast](https://user-images.githubusercontent.com/63168148/186540450-55a3226e-a252-498d-a7c1-0b5bb775d3fb.gif)|
 |:--:|
-|Animation showing the motion of simulated gas particles. All particles begin with equal magnitude and strictly horizontal velocities, but collisions between particles soon result in a Maxwell-Boltzman distribution of velocities|
+|Animation showing the motion of simulated gas particles. All particles begin with equal magnitude and strictly horizontal velocities, but collisions between particles soon result in a Maxwell-Boltzman distribution of velocities.|
 
 ### Distribution Analysis
-![distributions2](https://user-images.githubusercontent.com/63168148/186535447-d4a7a44d-3e85-4f3f-afe5-85b25bc072e2.png)
+|![distributions](https://user-images.githubusercontent.com/63168148/186540631-842ae748-a3ec-45f4-82c3-72612ddcdcb1.png)|
+|:--:|
+| Speed and Energy distributions of simulation particles after 1000 time steps, and the fit of the theoretical Maxwell-Boltzmann distributions to the data. |
 
 By fitting the Maxwell - Boltzmann distribution of speed the temperature of the system is found to be: 232.8775649362587 K
 
