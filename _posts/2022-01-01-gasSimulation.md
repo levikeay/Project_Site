@@ -6,10 +6,10 @@ description: Numerically modelling the energy and velocity distributions of a ga
 
 ---
 ### Introduction
-The problem given was to simulate elastic collisions in a gas. Then,
-1) generate an animation
-2) analyze the speed and energy distributions of the simulation
-3) compute the temperature of the system.
+The aim of this project was to simulate elastic collisions in a gas. Then, visualize and analyze the system by the following:
+1) generating an animation representing the gas particles motion
+2) analyzing the speed and energy distributions of particles
+3) computing the temperature of the system
 
 See below for my solution in Python, and the results.
 This project was completed for an assignment as a part of my Introduction to Computational Physics course. 
@@ -35,7 +35,9 @@ The temperature for the system is obtained via the fit and is
 printed to a text file "collisions.txt"
 
 ### Animation
-![collisions](https://user-images.githubusercontent.com/63168148/186534270-90a1b3cc-c935-4ba8-8520-b9ce98675cde.gif)
+|![collisions](https://user-images.githubusercontent.com/63168148/186534270-90a1b3cc-c935-4ba8-8520-b9ce98675cde.gif)|
+|:--:|
+|Animation showing the motion of simulated gas particles. All particles begin with equal magnitude and strictly horizontal velocities, but collisions between particles soon result in a Maxwell-Boltzman distribution of velocities|
 
 ### Distribution Analysis
 ![distributions2](https://user-images.githubusercontent.com/63168148/186535447-d4a7a44d-3e85-4f3f-afe5-85b25bc072e2.png)
