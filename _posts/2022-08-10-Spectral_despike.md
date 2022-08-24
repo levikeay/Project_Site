@@ -52,7 +52,9 @@ Setting the threshold too high, and no spikes will be removed as they will fall 
 
 Set the threshold too low, and you will remove/alter valuable information from the timeseries by over-despiking. An example of this is illustrated in the following animation, where the threshold is set to 0.5. Keep in mind that further smoothing and interpolation will be applied to the timeseries, and that this step is only meant to correct cloud content in the timeseries.
 
-![despike_toomuch](https://user-images.githubusercontent.com/63168148/186097661-cdd028ef-6a51-48c1-bb4b-7bf5b9f4ce85.gif)
+|![despike_toomuch](https://user-images.githubusercontent.com/63168148/186097661-cdd028ef-6a51-48c1-bb4b-7bf5b9f4ce85.gif)|
+|:--:|
+| Using a despike threshold that is too low. Smaller features in the timeseries are altered, not just cloudy observations. | 
 
 ## Algorithm in Python:
 
