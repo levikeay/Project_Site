@@ -59,7 +59,6 @@ Set the threshold too low, and you will remove/alter valuable information from t
 Here is a python function that implements this method for a single pixel. To apply to a large area, I use stack the imagery into a 3-dimensional array (Lat, Long, Time), and use np.apply_along_axis() along the time axis.
 
 ~~~
-
 def despike(pixel, doys, thresh = 0.05):
     """
     Iteratively despike a timeseries using linear interpolation and taking the upper envelope.
@@ -111,7 +110,6 @@ def despike(pixel, doys, thresh = 0.05):
             pixel2[bigspike] = interp[bigspike]
         iterations +=1
     return pixel2, doys2
-
 ~~~
 {: .language-python}
 
