@@ -55,7 +55,6 @@ from itertools import combinations
 from scipy.optimize import curve_fit
 """
 Levi Keay
-15070162
 phys 210
 
 When executed, this program generates and animation representing
