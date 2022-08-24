@@ -1,5 +1,5 @@
 ---
-title: Data Cleaning for Optical Satellite Timeseries Containing Cloud
+title: Data Cleaning by Interpolation for Optical Satellite Imagery Timeseries
 layout: post
 usemathjax: true
 post-image: "https://user-images.githubusercontent.com/63168148/186097612-0c4c06d0-09df-4e83-b4fe-889eccd94588.gif"
