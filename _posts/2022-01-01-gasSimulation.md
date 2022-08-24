@@ -1,7 +1,7 @@
 ---
 title: Simulating Elastic Collisions in O2 Gas
 layout: post
-post-image: "https://user-images.githubusercontent.com/63168148/186535447-d4a7a44d-3e85-4f3f-afe5-85b25bc072e2.png"
+post-image: "https://user-images.githubusercontent.com/63168148/186540450-55a3226e-a252-498d-a7c1-0b5bb775d3fb.gif"
 description: Numerically modelling the energy and velocity distributions of a gas filled container
 
 ---
