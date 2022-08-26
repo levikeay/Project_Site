@@ -7,8 +7,11 @@ description: Numerically modelling the energy and velocity distributions of a ga
 ---
 ### Introduction
 The aim of this project was to simulate elastic collisions in a gas. Then, visualize and analyze the system by the following:
+
 1) generating an animation representing the gas particles motion
+
 2) analyzing the speed and energy distributions of particles
+
 3) computing the temperature of the system
 
 See below for my solution in Python, and the results.
