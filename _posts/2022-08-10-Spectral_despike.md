@@ -3,7 +3,7 @@ title: Data Cleaning by Interpolation for Optical Satellite Imagery Timeseries
 layout: post
 usemathjax: true
 post-image: "https://user-images.githubusercontent.com/63168148/186097612-0c4c06d0-09df-4e83-b4fe-889eccd94588.gif"
-description: A simple algorithm to correct ephemeral spikes in optically-derived spectral trajectories
+description: A simple algorithm to correct ephemeral spikes in spectral trajectories
 
 ---
 
