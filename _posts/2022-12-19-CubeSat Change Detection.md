@@ -2,7 +2,7 @@
 title: Automated Forest Harvest Detection Using a CubeSat Imagery Timeseries
 layout: post
 usemathjax: true
-post-image: "https://user-images.githubusercontent.com/63168148/186097612-0c4c06d0-09df-4e83-b4fe-889eccd94588.gif"
+post-image: "https://user-images.githubusercontent.com/63168148/218497443-b78344da-fb75-4674-8e5e-ce01060f53a6.png"
 description: My first publication, a study of methods for automated change detection
 
 ---
