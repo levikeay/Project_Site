@@ -1,10 +1,11 @@
 ---
 title: Characterizing the London Penetration Depth in a High Tc Superconductor Across the Phase Transition
 layout: post
-post-image: "https://github.com/levikeay/Project_Site/blob/master/assets/images/Meisner/IMG_2431.jpeg?raw=true"
+post-image: "https://user-images.githubusercontent.com/63168148/218522615-0c61510a-29e9-4549-ad5b-d942a4d72c88.jpeg"
 description: Measuring the London Penetration Depth of YCBO Superconducting Crystal
 
 ---
+
 
 This experiment sought to characterize the [London penetration depth](http://hyperphysics.phy-astr.gsu.edu/hbase/Solids/chrlen.html) in Yttrium Barium Copper Oxide (YCBO), a high temperature superconductor. It is known as a "high temperature" superconductor because of its *relatively* high critical temperature: the temperature at which superconducting properties appear. The critical temperature for YCBO was found in this experiment to be 95.7 K, which was attained by submerging the measurement probe in liquid nitrogen (see report, figure 1).
 
