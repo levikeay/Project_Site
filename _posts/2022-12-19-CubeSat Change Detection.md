@@ -7,6 +7,8 @@ description: My first publication, a study of methods for automated change detec
 
 ---
 
-Find here the paper which describes the method for automated harvest detection. It is open access from the Canadian Journal of Remote Sensing:
+Follow the link below to the Canadian Journal of Remote Sensing where you can find my published article (open source), where methods and results are detailed for an algorithm to perform automated detection of harvest from a CubeSat imagery timeseries. 
 
 [https://doi.org/10.1080/07038992.2022.2154598](https://doi.org/10.1080/07038992.2022.2154598)
+
+Please feel free to [contact me](https://levikeay.github.io/Project_Site/#contact) with any questions regarding the research or future collaborations.
