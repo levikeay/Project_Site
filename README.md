@@ -15,15 +15,15 @@ WhatATheme has both posts and projects templates. I intend to use this site more
 
 To write a post, I start with the markdown documents provided in the _posts_ directory as a template, or create a new markdown document in that directory. When the site is built this will automatically generate a new post.
 
-### Larger changes made to the theme template:
+### Other changes made to the template, general tips for customization :
 
 I've made edits to HTML files in the repository in order to style the page to my liking. This includes removing blog post dates and read times in the blog card display. 
 
-- **I had to add this line to the gemfile:**
+~~- **I had to add this line to the gemfile:**~~
 
->gem "webrick"
+~~>gem "webrick"~~
 
-This allows the site to build using the newest ruby update, which does not include this package natively (thank you stack exchange).
+~~This allows the site to build using the newest ruby update, which does not include this package natively (thank you stack exchange).~~ fixed with merge, august 2022
 
 
 - **I enabled mathjax for writing LaTex style expressions following [this tutorial](https://alanduan.me/random/mathjax/).**
@@ -64,7 +64,7 @@ I found this html code to work best:
 </center>
 ~~~
 
-Replace YOUR_PDF_HERE.pdf with the url link to your pdf. this will be centered due to \<center\> tags. I set the width and height to be proportional to an 8.5x11 page by using width 850 and height 1100 * number of pages. The example above is for a 4 page document. This way there is no double scroll bar, and the pdf can sit inside the webpage.
+Replace YOUR_PDF_HERE.pdf with the url link to your pdf. this will be centered due to \<center\> tags. I set the width and height to be proportional to an 8.5x11 page by using width 850 and height 1100 * number of pages. The example above is for a 4 page document. This way there is no double scroll bar, and the pdf can sit inside the webpage. However, I have found that the PDF sometimes does not render in the site, depending on device or browser. Therefor I always include a link to the pdf using the common link syntax.
 
 
 
